@@ -1,0 +1,28 @@
+[project]
+name = "aes"
+version = "0.1.0"
+description = "Vorlesung Anwendung erweiterter Softwareentwicklung"
+authors = [
+    {name = "Peter Lohmann", email = "peter@lohmann-web.net"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.14"
+
+dependencies = [
+    "ipykernel ~= 7.2",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.3.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "nbconvert ~= 7.17",
+    "notebook (>=7.5.5,<8.0.0)",
+    "python-pptx (>=1.0.2,<2.0.0)",
+]
